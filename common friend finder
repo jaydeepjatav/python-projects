@@ -1,0 +1,27 @@
+#  method:-1
+
+def find_common_friends(user1_friends, user2_friends):
+    common_friends = []
+    for friend in user1_friends:
+        if friend in user2_friends:
+            common_friends.append(friend)
+    return common_friends
+
+user1_friends = ["Ridham", "Aayushi", "Jeet", "jaydeep"]
+user2_friends = ["Manav", "Gopal", "jaydeep", "Aayushi"]
+
+common_friends = find_common_friends(user1_friends, user2_friends)
+print("Common Friends:", common_friends)
+
+
+#method:-2
+
+user1_friends = ["Ridham", "Aayush", "Jeet", "jaydeep"]
+user2_friends = ["Manav", "Gopal", "jaydeep", "Aayush"]
+common_friends = []
+
+for friend in user1_friends:
+    if friend in user2_friends:
+        common_friends.append(friend)
+
+print("Common Friends:", common_friends)
